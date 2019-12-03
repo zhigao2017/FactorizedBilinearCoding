@@ -10,7 +10,7 @@ Download the MINC dataset, and put it into the 'data' folder.
 
 Download the pretrained vgg-16 model, put it into the 'data' folder, and we name it as 'vgg16-397923af.pth'
 
-Two-step training model:
+Training our model includes two steps.
 -------
 
 Step 1:
@@ -24,7 +24,7 @@ Step 2:
 python finetune.py -MINC True -data_path 'data/minc-2500/' -train_txt_path 'data/mincTrainImages.txt' -test_txt_path 'data/mincTestImages.txt' -rank 1 -k 2048 -beta 0.001 -model_path 'data/vgg16-397923af.pth'
 ```
 
-Or you can directly modify 'config.py' to set more detailed hyper-parameters.
+You can modify 'config.py' to set more detailed hyper-parameters.
 
 
 If this code is helpful, we'd appreciate it if you could cite our paper
