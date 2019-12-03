@@ -12,12 +12,16 @@ Training our model includes two steps.
 -------
 
 Step 1:
+
+We train the new added layers.
 ```
 python last.py -MINC True -data_path 'data/minc-2500/' -train_txt_path 'data/mincTrainImages.txt' -test_txt_path 'data/mincTestImages.txt' -rank 1 -k 2048 -beta 0.001 -pre_model_path 'data/vgg16-397923af.pth' -save_low_bound 99
 ```
 
 
 Step 2:
+
+We train the whole network.
 ```
 python finetune.py -MINC True -data_path 'data/minc-2500/' -train_txt_path 'data/mincTrainImages.txt' -test_txt_path 'data/mincTestImages.txt' -rank 1 -k 2048 -beta 0.001 -model_path 'data/vgg16-397923af.pth'
 ```
