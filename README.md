@@ -4,8 +4,6 @@ Prerequisites
 -------
 Our code requires PyTorch v1.0 and Python 2.
 
-You should
--------
 Download the MINC dataset, and put it into the 'data' folder.
 
 Download the pretrained vgg-16 model, put it into the 'data' folder, and we name it as 'vgg16-397923af.pth'
